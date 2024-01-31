@@ -1,6 +1,6 @@
 package com.mycompany.customer;
 
-public record CustomerService() {
+public record CustomerService(CustomerRespository customerRespository) {
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
@@ -10,5 +10,6 @@ public record CustomerService() {
         //to do: check if email is valid (RegEx)
         //to do: check if email is not taken
         //store customer in db
+        customerRespository.save(customer);
     }
 }
