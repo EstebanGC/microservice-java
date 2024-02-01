@@ -6,7 +6,7 @@ spring:
   datasource:
     username: 'iquark'
     url: jdbc:postgresql://localhost:5432/customer
-    password: 'password'
+    password: '213111454'
   jpa:
     properties:
       hibernate:

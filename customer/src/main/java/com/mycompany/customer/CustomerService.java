@@ -1,5 +1,8 @@
 package com.mycompany.customer;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public record CustomerService(CustomerRespository customerRespository) {
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
