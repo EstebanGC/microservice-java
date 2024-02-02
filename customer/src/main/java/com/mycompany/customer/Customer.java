@@ -23,10 +23,10 @@ public class Customer {
             generator = "customer_id_sequence"
     )
     private Integer id;
-    @Column(nullable = false)
+
     private String firstName;
-    @Column(nullable = false)
+
     private String lastName;
-    @Column(nullable = false)
+
     private String email;
 }
