@@ -1,4 +1,4 @@
-package com.mycompany.customer;
+package com.microservices.customer;
 
 public class CustomerNotFoundException extends RuntimeException {
     public CustomerNotFoundException(Integer id) {
