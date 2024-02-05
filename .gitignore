@@ -1,16 +1,16 @@
-    application.yml
-    docker-compose.yml
+        application.yml
+        docker-compose.yml
 
-    # Ignora también archivos específicos de Docker
-    docker-compose.override.yml
-    docker-compose.dev.yml
-    docker-compose.prod.yml
+        # Ignora también archivos específicos de Docker
+        docker-compose.override.yml
+        docker-compose.dev.yml
+        docker-compose.prod.yml
 
-    # Ignora archivos de logs
-    logs/*
+        # Ignora archivos de logs
+        logs/*
 
-    # Ignora archivos de IDE
-    .idea/
+        # Ignora archivos de IDE
+        .idea/
 
-    # Ignora archivos temporales
-    target/
+        # Ignora archivos temporales
+        target/
