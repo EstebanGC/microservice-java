@@ -13,7 +13,7 @@
             //to do: check if email is valid (RegEx)
             //to do: check if email is not taken
             //store customer in db
-            customerRepository.save(customer);
+            customerRepository.saveAndFlush(customer);
         }
 
         public Customer findById(Integer id) {

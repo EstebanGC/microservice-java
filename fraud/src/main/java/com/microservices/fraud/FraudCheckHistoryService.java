@@ -1,7 +1,10 @@
 package com.microservices.fraud;
 
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 
+@Service
 public class FraudCheckHistoryService {
 
     private final FraudCheckHistoryRepository fraudCheckHistoryRepository;
