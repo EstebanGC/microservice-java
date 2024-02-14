@@ -26,7 +26,7 @@
                         FraudCheckResponse.class,
                         customer.getId());
 
-                if (fraudCheckResponse.isFraudster()){
+                if (fraudCheckResponse.isFraudster()) {
                     throw new IllegalStateException("fraudster");
                 }
         }
