@@ -9,6 +9,7 @@
     public class CustomerService {
 
         private final CustomerRepository customerRepository;
+        //Rest Template used to connect microservices
         private final RestTemplate restTemplate;
 
             public void registerCustomer(CustomerRegistrationRequest request) {
@@ -21,6 +22,7 @@
             //to do: check if email is not taken
                 customerRepository.saveAndFlush(customer);
 
+                //Connecting fraud microservices to this one
                 FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
                         "https://localhost:8081/api/v1/fraud-check/{customerID}",
                         FraudCheckResponse.class,
