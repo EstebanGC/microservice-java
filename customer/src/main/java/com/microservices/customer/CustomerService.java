@@ -24,7 +24,7 @@
 
                 //Connecting fraud microservices to this one
                 FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                        "https://localhost:8081/api/v1/fraud-check/{customerID}",
+                        "http://localhost:8081/api/v1/fraud-check/{customerId}",
                         FraudCheckResponse.class,
                         customer.getId());
 
