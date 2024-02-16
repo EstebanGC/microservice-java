@@ -17,7 +17,7 @@ public class FraudController {
             @PathVariable("customerId") Integer customerId) {
         boolean isFraudulentCustomer = fraudCheckHistoryService.isFraudulentCustomer(customerId);
 
-//        log.info("fraud check request for customer {}", customerID);
+        log.info("fraud check request for customer {}", customerId);
         return new FraudCheckResponse(isFraudulentCustomer);
         }
 }
