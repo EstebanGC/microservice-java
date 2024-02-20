@@ -24,10 +24,10 @@
     <maven.compiler.target>19</maven.compiler.target>
     <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
     <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
-    <property>
-      <name>spring.cloud-version</name>
-      <value>2020.0.3</value>
-    </property>
+<!--    <property>-->
+<!--      <name>spring-cloud.version</name>-->
+<!--      <value>2020.0.3</value>-->
+<!--    </property>-->
   </properties>
 
   <dependencyManagement>
@@ -41,9 +41,11 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring-cloud.version}</version>
-        <type>pom</type>
+        <artifactId>spring-cloud-starter-config</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
       </dependency>
     </dependencies>
   </dependencyManagement>
