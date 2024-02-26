@@ -14,20 +14,20 @@
   <url>http://www.example.com</url>
   <modules>
     <module>customer</module>
-      <module>fraud</module>
+    <module>fraud</module>
     <module>eureka-server</module>
   </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>19</maven.compiler.source>
-    <maven.compiler.target>19</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
     <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
     <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
-<!--    <property>-->
-<!--      <name>spring-cloud.version</name>-->
-<!--      <value>2020.0.3</value>-->
-<!--    </property>-->
+    <property>
+      <name>spring-cloud.version</name>
+      <value>2020.0.3</value>
+    </property>
   </properties>
 
   <dependencyManagement>
