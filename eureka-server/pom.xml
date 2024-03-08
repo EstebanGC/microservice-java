@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>com.my-app.app</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>eurekaserver</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,6 +20,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-server</artifactId>
+            <version>4.1.0</version>
         </dependency>
     </dependencies>
 </project>
